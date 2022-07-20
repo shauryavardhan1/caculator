@@ -1,0 +1,45 @@
+<html> 
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <title> 
+            Calculator
+        </title>
+    </head>
+    <body> 
+        <h1> This is Online Calculator.<br>Made By Shaurya Vardhan. </h1>
+        <form name="sva1" class="calci" action="Calculator.html" method="post">
+<input type="text" name="answer" id="display">
+<br><br>
+<input type="button" class="btnDesign" value="C" onclick="sva1.answer.value=''">
+<input type="button" class="btnDesign" value="<" onclick="sva1.answer.value=sva1.answer.value.substring(0,sva1.answer.value.length*1-1)">
+<input type="button" class="btnDesign" value="00" onclick="sva1.answer.value+='00'">
+<input type="button" class="operatorDesign" value="/" onclick="sva1.answer.value+='/'">
+<br><br>
+<input type="button" class="btnDesign" value="7" onclick="sva1.answer.value+='7'">
+<input type="button" class="btnDesign" value="8" onclick="sva1.answer.value+='8'">
+<input type="button" class="btnDesign" value="9" onclick="sva1.answer.value+='9'">
+<input type="button" class="operatorDesign" value="*" onclick="sva1.answer.value+='*'">
+<br><br>
+<input type="button" class="btnDesign" value="4" onclick="sva1.answer.value+='4'">
+<input type="button" class="btnDesign" value="5" onclick="sva1.answer.value+='5'">
+<input type="button" class="btnDesign" value="6" onclick="sva1.answer.value+='6'">
+<input type="button" class="operatorDesign" value="-" onclick="sva1.answer.value+='-'">
+<br><br>
+<input type="button" class="btnDesign" value="1" onclick="sva1.answer.value+='1'">
+<input type="button" class="btnDesign" value="2" onclick="sva1.answer.value+='2'">
+<input type="button" class="btnDesign" value="3" onclick="sva1.answer.value+='3'">
+<input type="button" class="operatorDesign" value="+" onclick="sva1.answer.value+='+'">
+<br><br>
+<input type="button" class="btnDesign" id="zero" value="0" onclick="sva1.answer.value+='0'">
+<input type="button" class="btnDesign" value="." onclick="sva1.answer.value+='.'">
+<input type="button" class="operatorDesign" value="=" onclick="sva1.answer.value=eval(sva1.answer.value)">
+
+
+
+
+        </form>
+
+
+
+    </body>
+</html>
